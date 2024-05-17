@@ -10,6 +10,8 @@ import PageNotFound from './Pages/PageNotFound.jsx'
 import Home from './Pages/Home.jsx'
 import Movies from './Pages/Movies.jsx'
 import Contact from './Pages/Contact.jsx'
+import MovieDetails from './Components/MovieDetails/MovieDetails.jsx'
+
 
 /*Variavel que vai criar armazenar as rotas */
 /* Toda rota se inicia na home, (path: '/') */
@@ -22,6 +24,7 @@ const router = createBrowserRouter([
       {index: true, element: <Home/>},
       {path: 'About', element: <About/>},
       {path: 'Movies', element: <Movies/>},
+      {path: 'Movies/:id', element: <MovieDetails/>},
       {path: 'Contact', element: <Contact/>},
       {path: '*', element: <PageNotFound/>}
     ]
